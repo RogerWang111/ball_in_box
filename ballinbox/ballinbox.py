@@ -38,6 +38,8 @@ def check_and_del(x,y,R_index):
             R[i] = 0
     R[R_index]=0   
     
+     
+    
 def ball_in_box(ballnum,blocks):
     #先将圆心定好
     pointgetter()
@@ -60,3 +62,24 @@ def ball_in_box(ballnum,blocks):
         check_and_del(x,y,ri)
         j = j - 1
     return Result
+     
+    """
+           测试用例1：
+           ballnum=5;
+           blocks=(0.3,-0.4),(0.5,-0.5)
+           结果：Total area: 3.093865577996457
+           """
+
+    """
+               测试用例2：
+               ballnum=5;
+               blocks=(0.6,-0.4),(0.6,-0.7)
+               结果：Total area: 3.0398553170959413
+               """
+
+    """
+                   测试用例3：
+                   ballnum=5;
+                   blocks=(0.8,-0.3),(0.2,-0.9)
+                   结果：Total area: 3.2536092812461908
+                   """
